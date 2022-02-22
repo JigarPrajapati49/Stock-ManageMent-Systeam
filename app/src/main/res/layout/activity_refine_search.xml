@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RefineSearch">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_add_tennis"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1877F2">
+
+        <TextView
+            android:id="@+id/RefineSearchBackArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_arrow_back_24" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:text="Refine Search"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+<!--    <Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#1877F2"-->
+<!--        android:logo="@drawable/ic_baseline_arrow_back_ios_24"-->
+<!--        android:title="Refine Search"-->
+<!--        android:titleMarginStart="40dp" />-->
+
+    <TextView
+        android:id="@+id/TVpname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="65dp"
+        android:text="Product Name"
+        android:textColor="#1877F2" />
+
+    <EditText
+        android:id="@+id/ETpname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVpname"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:drawableLeft="@drawable/ic_baseline_local_offer_24"
+        android:drawableRight="@drawable/ic_baseline_cancel_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="Product Name" />
+
+    <TextView
+        android:id="@+id/TVvname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETpname"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="Vendor Name"
+        android:textColor="#1877F2" />
+
+    <EditText
+        android:id="@+id/ETcname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVvname"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawableRight="@drawable/ic_baseline_cancel_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="Product Name" />
+
+    <TextView
+        android:id="@+id/TVfromdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETcname"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="From Date"
+        android:textColor="#1877F2" />
+
+    <EditText
+        android:id="@+id/ETfromdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVfromdate"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:drawableLeft="@drawable/ic_baseline_edit_calendar_24"
+        android:drawableRight="@drawable/ic_baseline_cancel_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:focusable="false"
+        android:hint="From Date" />
+
+    <TextView
+        android:id="@+id/TVtodate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETfromdate"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="To Date"
+        android:textColor="#1877F2" />
+
+    <EditText
+        android:id="@+id/ETtodate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVtodate"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:drawableLeft="@drawable/ic_baseline_edit_calendar_24"
+        android:drawableRight="@drawable/ic_baseline_cancel_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:focusable="false"
+        android:hint="To Date" />
+
+    <TextView
+        android:id="@+id/TVtransactiontype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETtodate"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="Transaction Type"
+        android:textColor="#1877F2" />
+
+    <Spinner
+        android:id="@+id/SPtransactiontype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVtransactiontype"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/TVshortingtype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SPtransactiontype"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="Shorting Type"
+        android:textColor="#1877F2" />
+
+    <Spinner
+        android:id="@+id/SPshortingtype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVshortingtype"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@color/white" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/SPshortingtype"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/purchaseentryroundshape"
+        android:src="@drawable/ic_baseline_check_24" />
+
+
+</RelativeLayout>

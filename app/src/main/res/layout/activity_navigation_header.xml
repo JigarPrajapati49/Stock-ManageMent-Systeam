@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/shape"
+    tools:context=".NavigationHeader">
+
+    <ImageView
+        android:id="@+id/IVpubg"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/stockmanagementsysteam" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/IVpubg"
+
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:fontFamily="casual"
+        android:textSize="@dimen/_10sdp"
+
+        android:text="Stock Management Systeam" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

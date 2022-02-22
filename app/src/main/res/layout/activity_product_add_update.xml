@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductAddUpdate">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_add_tennis"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1877F2">
+
+        <TextView
+            android:id="@+id/ProductAddUpdatebackArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_arrow_back_24" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:text="Product Add/Update"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+<!--    <Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#1877F2"-->
+<!--        android:gravity="center"-->
+<!--        android:logo="@drawable/ic_baseline_arrow_back_ios_24"-->
+<!--        android:title="Product Add/Update"-->
+<!--        android:titleMarginStart="@dimen/_40sdp"-->
+<!--        android:titleTextColor="@color/white" />-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_55sdp">
+
+        <TextView
+            android:id="@+id/TVproductnameinadd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Product Name"
+            android:textColor="#1877F2" />
+
+        <EditText
+            android:id="@+id/ETproductnameinadd"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVproductnameinadd"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableLeft="@drawable/ic_baseline_local_offer_24"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Product Name" />
+
+        <TextView
+            android:id="@+id/TVproductcolor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ETproductnameinadd"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="7dp"
+            android:text="Product Color"
+            android:textColor="#1877F2" />
+
+        <EditText
+            android:id="@+id/ETproductcolor"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVproductcolor"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@drawable/ic_baseline_color_lens_24"
+            android:drawablePadding="10dp"
+            android:hint="Product Color" />
+
+        <TextView
+            android:id="@+id/TVproductsize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ETproductcolor"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="7dp"
+            android:text="Product Size"
+            android:textColor="#1877F2" />
+
+        <EditText
+            android:id="@+id/ETproductsize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TVproductsize"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableLeft="@drawable/ic_baseline_zoom_out_map_24"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Product Size" />
+
+        <TextView
+            android:id="@+id/TVproductdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ETproductsize"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:text="Product Description"
+            android:textColor="#1877F2" />
+
+        <EditText
+            android:id="@+id/ETproductdescription"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_90sdp"
+            android:layout_below="@+id/TVproductdescription"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:drawableLeft="@drawable/ic_baseline_format_list_numbered_24"
+            android:drawablePadding="@dimen/_10sdp"
+            android:hint="Product Description" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ETproductdescription"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:checked="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ETproductdescription"
+            android:layout_marginTop="@dimen/_19sdp"
+            android:layout_toRightOf="@+id/checkbox"
+            android:text="Do you need low Stock Alert on this product..?" />
+
+        <TextView
+            android:id="@+id/TValert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkbox"
+            android:layout_marginHorizontal="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:drawablePadding="@dimen/_10sdp"
+            android:inputType="number"
+            android:text="Minimum quantity for alert"
+            android:textColor="#1877F2" />
+
+        <EditText
+            android:id="@+id/minimumqualityalert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TValert"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginTop="7dp"
+            android:drawableLeft="@drawable/ic_baseline_add_alert_24"
+            android:drawablePadding="10dp"
+            android:hint="Minnimum quantity for alert"
+            android:inputType="number" />
+
+        <ImageButton
+            android:id="@+id/IBproductaddupdate"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/minimumqualityalert"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/addupdateroundshape"
+            android:src="@drawable/ic_baseline_check_24" />
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/imageview"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:layout_marginLeft="@dimen/_215sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:src="@drawable/ic_baseline_photo_camera_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageview"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Product Image" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

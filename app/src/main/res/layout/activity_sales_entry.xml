@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SalesEntry">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_add_tennis"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#1877F2">
+
+        <TextView
+            android:id="@+id/SalesEntryBackArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_arrow_back_24" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:text="Sales Entry"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+<!--    <Toolbar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="#1877F2"-->
+<!--        android:title="Sales Entry "-->
+<!--        android:titleMarginStart="40dp"-->
+<!--        android:titleTextColor="@color/white">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/salesback"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_arrow_back_ios_24" />-->
+
+<!--    </Toolbar>-->
+
+    <TextView
+        android:id="@+id/pname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:text="Product Name"
+        android:textColor="#1877F2" />
+
+    <EditText
+        android:id="@+id/ETpname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pname"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawableLeft="@drawable/ic_baseline_local_offer_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="Product Name" />
+
+    <TextView
+        android:id="@+id/vname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETpname"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="Vendor Name"
+        android:textColor="#1877F2" />
+
+    <EditText
+        android:id="@+id/ETcname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vname"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawableRight="@drawable/ic_baseline_cancel_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="Customer Name" />
+
+    <TextView
+        android:id="@+id/TVsalesquality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETcname"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="Sales Quality"
+        android:textColor="#1877F2" />
+
+    <EditText
+        android:id="@+id/ETsalequality"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVsalesquality"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawableLeft="@drawable/ic_baseline_edit_calendar_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="Sales Quality"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/TVsalesdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETsalequality"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="Sales Date"
+        android:textColor="#1877F2" />
+
+    <EditText
+        android:id="@+id/ETsalesdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVsalesdate"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawableLeft="@drawable/ic_baseline_edit_calendar_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:focusable="false"
+        android:hint="Sales Date" />
+
+    <TextView
+        android:id="@+id/TVsalesprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETsalesdate"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="Sales Price"
+        android:textColor="#1877F2" />
+
+    <EditText
+        android:id="@+id/ETsalesprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVsalesprice"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:drawableLeft="@drawable/ic_baseline_edit_calendar_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="00.00"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/TVsalestype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETsalesprice"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="Sales Type"
+        android:textColor="#1877F2" />
+
+    <Spinner
+        android:id="@+id/SPsalestype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVsalestype"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/roundshape" />
+
+    <ImageButton
+        android:id="@+id/IBsalesentry"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/SPsalestype"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/purchaseentryroundshape"
+        android:src="@drawable/ic_baseline_check_24" />
+
+
+</RelativeLayout>

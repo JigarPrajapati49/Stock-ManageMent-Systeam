@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1065925574413",
+    "firebase_url": "https://stock-management-system-9a5cb-default-rtdb.firebaseio.com",
+    "project_id": "stock-management-system-9a5cb",
+    "storage_bucket": "stock-management-system-9a5cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065925574413:android:3339d3785615967b4d3a44",
+        "android_client_info": {
+          "package_name": "com.jigarprajapati.stockmanagementsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065925574413-47v8l6g9rm6lt4out8m009p70l2igi2c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvHsUYe9EOSUym9MqOHlzFSOFI-PfjGt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065925574413-47v8l6g9rm6lt4out8m009p70l2igi2c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

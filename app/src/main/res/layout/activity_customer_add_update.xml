@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomerAddUpdate">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1877F2"
+        android:logo="@drawable/ic_baseline_arrow_back_ios_24"
+        android:title="Customer Add/Update"
+        android:titleMarginStart="40dp"
+        android:titleTextColor="@color/white" />
+
+
+    <TextView
+        android:id="@+id/TVcustomername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="60dp"
+        android:text="Customer Name"
+        android:textColor="#1877F2" />
+
+    <EditText
+        android:id="@+id/ETcustomername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVcustomername"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="Customer Name"/>
+
+
+    <TextView
+        android:id="@+id/TVcustomercompanyname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETcustomername"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Customer Company Name"
+        android:textColor="#1877F2" />
+
+    <EditText
+        android:id="@+id/ETcustomercompanyname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVcustomercompanyname"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:drawableLeft="@drawable/ic_baseline_location_city_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="Customer Company Name" />
+
+    <TextView
+        android:id="@+id/TVcustomeraddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETcustomercompanyname"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Customer Address "
+        android:textColor="#1877F2" />
+
+
+    <EditText
+        android:id="@+id/ETcustomeraddress"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/TVcustomeraddress"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:drawableLeft="@drawable/ic_baseline_near_me_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="Customer Address" />
+
+    <TextView
+        android:id="@+id/TVcustomermobileno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETcustomeraddress"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Customer Mobile No"
+        android:textColor="#1877F2" />
+
+    <EditText
+        android:id="@+id/ETcustomermobileno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVcustomermobileno"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="Customer Mobile No."
+        android:inputType="phone" />
+
+    <TextView
+        android:id="@+id/TVcustomeremailid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ETcustomermobileno"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Customer EmailId"
+        android:textColor="#1877F2" />
+
+    <EditText
+        android:id="@+id/ETcustomeremailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TVcustomeremailid"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="@dimen/_10sdp"
+        android:hint="Customer EmailId" />
+
+    <ImageButton
+        android:id="@+id/IBCustomeraddupdate"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/ETcustomeremailid"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/purchaseentryroundshape"
+        android:src="@drawable/ic_baseline_check_24" />
+
+
+
+</RelativeLayout>
